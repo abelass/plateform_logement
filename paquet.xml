@@ -17,7 +17,7 @@
   
  		<necessite nom="wsps_html5" compatibilite="[1.0.2;]" /> 
  		<necessite nom="wsp_ml" compatibilite="[0.2.0;]" />  
- 		<necessite nom="theme_bsunited" compatibilite="[2.2.2;]" />
+ 		<necessite nom="theme_bsreadable" compatibilite="[2.2.2;]" />
  		<necessite nom="ws_partenaires" compatibilite="[1.0.0;]" />  
 
 </paquet>
