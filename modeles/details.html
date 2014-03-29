@@ -1,0 +1,8 @@
+<aside class="details">
+    <ul>
+    <BOUCLE_details(DATA){source tableau, #ENV{infos}|explode{','}}>
+    	#SET{infos,#VALEUR|explode{':'}}
+    	<li><span class="type">[(#GET{infos}|table_valeur{0})]</span> : <span class="donnee">[(#GET{infos}|table_valeur{1})]</span>
+    </BOUCLE_details>
+    <ul>
+</aside>
