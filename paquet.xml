@@ -7,10 +7,6 @@
 	logo=""
 	documentation=""
 >
-	<!--
-		Paquet genere le 2014-03-25 15:24:31
-		(Vous pouvez bien entendu supprimer ces commentaires) 
-	-->
 
 	<nom>Plateforme Logement</nom>
 
@@ -21,28 +17,7 @@
   
  		<necessite nom="wsps_html5" compatibilite="[1.0.2;]" /> 
  		<necessite nom="mcp_ml" compatibilite="[0.2.0;]" />  
- 		<necessite nom="ws_agenda" compatibilite="[1.0.0;]" />
+ 		<necessite nom="theme_bsunited" compatibilite="[2.2.2;]" />
  		<necessite nom="ws_partenaires" compatibilite="[1.0.0;]" />  
-	<!--
-		Exemple de commandes
-		* dependances
-
-		<utilise nom="saisies" compatibilite="[1.21.0;]" />
-		<lib nom="simplehtmldom" lien="http://chemin_vers_archive.zip" />
-		* pipelines
-		<pipeline nom="autoriser" inclure="plateform_logement_autorisations.php" />
-		<pipeline nom="insert_head" inclure="plateform_logement_pipelines.php" />
-		* declarer un pipeline 
-		<pipeline nom="mon_pipeline" action="" />
-		* parents de menus de SPIP :
-				menu_accueil (A eviter), menu_edition, menu_publication,
-				menu_activite, menu_squelette, menu_administration, menu_configuration 
-		<menu nom="plateform_logement" titre="plateform_logement:plateform_logement_titre" parent="menu_edition"  icone="images/plateform_logement-16.png" />
-		* parents d'onglets... configuration, plugins, statistiques, ... 
-		<onglet nom="plateform_logement" titre="plateform_logement:plateform_logement_titre" parent="configuration" icone="images/plateform_logement-24.png" />
-	-->
-
-
-
 
 </paquet>
