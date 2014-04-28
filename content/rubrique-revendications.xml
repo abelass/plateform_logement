@@ -2,4 +2,5 @@
         <nom>La Rubrique Revendications</nom>
 
         <description>Affiche les articles de la rubrique en question</description>
+        <branche type="article" composition="revendications" />  
 </composition>

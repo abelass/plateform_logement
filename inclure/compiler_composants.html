@@ -1,0 +1,9 @@
+#SET{chemin,#ENV{chemin}}
+<BOUCLE_extras(DATA){source table, (#GET{chemin}|find_all_in_path{mcp-#ENV{type}})} {par cle}>
+  <INCLURE{fond=#GET{chemin}/#CLE|replace{'.html',''},env}/>
+</BOUCLE_extras>
+  
+  
+<BOUCLE_ev(RUBRIQUES){id_trad=20}{tout}{lang}{si #ENV{chemin}|=={aside}|oui}>
+ <a href="#URL_RUBRIQUE" title="#TITRE">[(#LOGO_RUBRIQUE|image_reduire{300})]</a>
+</BOUCLE_ev>
