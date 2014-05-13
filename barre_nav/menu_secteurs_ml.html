@@ -2,7 +2,7 @@
     <B_enfants>
         <div class="menu menu-container navbar-inner">
         <ul class="menu-items menu-liste nav">
-        <BOUCLE_enfants(RUBRIQUES){id_parent} {id_trad!=20}{par num titre, titre}{tout}>
+        <BOUCLE_enfants(RUBRIQUES){id_parent} {par num titre, titre}{tout}>
         <li class="item menu-entree[ (#EXPOSE)]">
             <a href="#URL_RUBRIQUE">[(#TITRE|couper{80})]</a>
         </li>
