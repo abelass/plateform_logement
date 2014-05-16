@@ -10,6 +10,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	
 	//S
 	'signatures_papier'=>'Signataires (web) :',
+	'signatures_petition'=>'Signataires (web) :',	
 );
 
 ?>
