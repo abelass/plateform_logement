@@ -6,10 +6,11 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// P
-	'plateform_logement_titre' => 'Plateforme Logement',
+	'plateform_logement_titre' => 'Plateforme Logement',	
 	
 	//S
-	'signatures_papier'=>'Signataires (web) :',
+	'signatures_papier'=>'Aantal ondertekenaars (papier):',
+	'signatures_petition'=>'Aantal ondertekenaars (web):',		
 );
 
 ?>
