@@ -2,8 +2,13 @@
 <BOUCLE_extras(DATA){source table, (#GET{chemin}|find_all_in_path{mcp-#ENV{type}})} {par cle}>
   <INCLURE{fond=#GET{chemin}/#CLE|replace{'.html',''},env}/>
 </BOUCLE_extras>
+
+<BOUCLE_pet(RUBRIQUES){id_trad=22}{tout}{exclus}{lang}{si #ENV{chemin}|=={aside}|oui}>
+ <a class="btn btn-danger" href="#URL_RUBRIQUE" title="#TITRE">#TITRE</a>
+</BOUCLE_pet>
   
   
-<BOUCLE_ev(RUBRIQUES){id_trad=20}{tout}{lang}{si #ENV{chemin}|=={aside}|oui}>
- <a href="#URL_RUBRIQUE" title="#TITRE">[(#LOGO_RUBRIQUE|image_reduire{300})]</a>
+<BOUCLE_ev(RUBRIQUES){id_trad=20}{tout}{lang}{exclus}{si #ENV{chemin}|=={aside}|et{#ID_TRAD|!={1}}|oui}>
+ <a class="event" href="#URL_RUBRIQUE" title="#TITRE">[(#LOGO_RUBRIQUE|image_reduire{300})]</a>
 </BOUCLE_ev>
+

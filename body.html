@@ -1,6 +1,6 @@
-[(#ENV{home}|oui|ou{#ENV{id_trad}|=={20}|oui})#SET{large,large}]
+[(#REM)[(#COMPOSITION|=={home}|oui|ou{#ENV{id_trad}|=={20}|oui})#SET{large,large}]]
 <body>
-  <div class="page[ (#ENV{home}|oui)home][ (#GET{large})]">
+  <div class="page[ (#COMPOSITION|=={home}|oui)home][ (#GET{large})]">
 		<div class="container">
 			<div class="header" id="header">
 				<INCLURE{fond=header/#ENV{type-page},env} />
