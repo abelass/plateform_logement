@@ -13,7 +13,7 @@
 			[(#LOGO_PARTENAIRE
 		      |image_reduire{*,50}
 			)]
-			</a> <a href="#URL_SITE">#NOM</a>[<div class="texte">(#DESCRIPTIF|extraire_multi)</div>]</li>
+			</a> <a href="[(#URL_SITE**|extraire_multi)]">#NOM</a>[<div class="texte">(#DESCRIPTIF|extraire_multi)</div>]</li>
 		</BOUCLE_partenaires>
 	</ul>
 	[<p class="pagination">(#PAGINATION)</p>]
