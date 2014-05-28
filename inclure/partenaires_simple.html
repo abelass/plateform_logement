@@ -4,7 +4,7 @@
 
 	<ul class="liste-items">
 		<BOUCLE_partenaires(PARTENAIRES) {id_rubrique ?} {par num nom}{pagination #ENV{pagination,20}}>	
-		  <li class="item"><a href="[(#URL_SITE|extraire_multi)]">
+		  <li class="item"><a href="[(#URL_SITE**|extraire_multi)]">
 			[(#REM)
 			[(#LOGO_PARTENAIRE
 		      |image_passe_partout{#ENV{width,100},#ENV{height,100}}
